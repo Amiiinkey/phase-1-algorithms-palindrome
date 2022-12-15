@@ -1,9 +1,27 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // Write your algorithm hereconst palindromeWord = word.split('').reverse().join('')
+  const palindromeWord = palindrome(word);
+  if (word === palindromeWord) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+function palindrome(word) {
+  return word.split("").reverse().join("");
+}
+
+
+
+
+
 /* 
-  Add your pseudocode here
+  Add your pseudocode here//  if palindromeWord function returns same as input 
+  //     return true
+  //     if not 
+  //     return false
+
 */
 
 /*
